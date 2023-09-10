@@ -1,0 +1,199 @@
+/*
+Theme Name: ATC Group Child
+Description: This is a child theme for ATC Group Theme
+Author: ATC Group
+Template: atcgroup
+Version: 3.0
+*/
+
+/*************** ADD CUSTOM CSS HERE.   ***************/
+/*Add Fonts*/
+@font-face {
+	font-family: SVN-Harabaras;
+	src: url("fonts/SVN-Harabaras.ttf") format("truetype"); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+body{font-size: 1.1em !important;}
+h1,h2{
+	font-family: SVN-Harabaras !important;
+/*	letter-spacing:4px;*/
+}
+h2{
+	font-size: 4em;
+	font-weight: 400 !important;
+	margin-bottom: 10px;
+} 
+/*Topar*/
+.header .nav-small .header-social-icons a.icon:not(.button) {
+	font-size: 20px;
+	background-repeat: no-repeat;
+}
+.header-social-icons .instagram{
+	background-image: url('/wp-content/themes/atcgroup-child/img/ins.png');
+}
+.header-social-icons .facebook {
+	background-image: url('/wp-content/themes/atcgroup-child/img/fb.png');
+}
+.header-social-icons .behance  {
+	background-image: url('/wp-content/themes/atcgroup-child/img/be.png');
+}
+.header-social-icons .icon-instagram:before {
+	content: unset;
+}
+.header-social-icons .icon-facebook:before {
+	content: unset;
+}
+.header-social-icons .icon-dribbble:before {
+	content: unset;
+}
+/*Header*/
+.header-wrapper.stuck .header-main {background-color: #F33A63}
+.nav-small.nav>li.html.html_topbar_left{font-size: 0.9em}
+.header-nav-main.nav-left{justify-content: center;}
+/*.header-nav-main.nav-size-xlarge>li>a{font-size: 1.25em}*/
+.header-nav-main.nav-spacing-xlarge>li{margin: 0px 30px;}
+/*Footer*/
+#footer h3{color: #540d6e;}
+#footer h4{font-weight: normal;}
+#footer li{
+	list-style:none;    
+	margin-left: 0;
+}
+#footer p{font-size: 1.25em;}
+#footer a{
+	color: var(--primary-color); 
+	font-weight: normal;
+}
+#footer a:hover{color: #540d6e;}
+#footer a.button{font-size: 1.25em;}
+#footer .social-icons .button:not(.is-outline){color: var(--primary-color) !important;}
+.form-flat-footer input{
+	border-radius: 6px;
+}
+.form-flat-footer input[type='submit']:not(.is-form){
+	background-color:#FFD23F;
+	font-weight: normal;
+	text-transform: unset;
+	color: var(--primary-color);
+}
+.form-flat-footer input::-webkit-input-placeholder{color:#F33A63}
+.absolute-footer{display: none}
+#footer .back-to-top.button.icon {
+	background: #F33A63;
+	border: solid 1px white;
+	-webkit-box-shadow: -3px 3px 8px 2px rgb(0 0 0 / 50%);
+	-moz-box-shadow: -3px 3px 8px 2px rgba(0,0,0,0.5);
+	box-shadow: -3px 3px 8px 2px rgb(0 0 0 / 50%);
+	color: #fff;
+}
+/*Home page*/
+.banner-section{margin-top: -153px}
+.banner h2 { 
+	font-size: 4.6em;    
+}
+.banner-section .button{font-weight: 500;}
+.banner-section .button.secondary{color: var(--primary-color);}
+.banner p {font-size: 1.3em;}
+.quantity-five-col .five-starts h3,
+.quantity-five-col .five-starts p{
+	background: #FFD23F;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.quantity-five-col .five-starts p{   
+	font-size: 1.25em;
+}
+.quantity-five-col .box-text a.button {    
+	margin-bottom: 0;
+	color: #f33a63;
+	transition: all .3s;
+}
+.quantity-five-col .button.is-underline:before{
+	width: 95%;    
+	height: 1px;    
+	left: 2%;
+	bottom: 6px;
+	opacity:1;
+}
+.quantity-five-col .box-text a.button:hover{
+	color: #540d6e;
+	font-size: 1.1em;
+}
+.sevices .section-bg.bg-loaded{background-position: top;background-size: 100%;}
+.service-left>.col-inner{
+	border-radius: 22px 0px 0px 22px;
+	padding: 35px ;
+}
+.service-right>.col-inner{
+	padding: 30px;
+}
+.section-title-normal, .section-title-normal span{
+	border-bottom: 0;
+	text-transform: unset;
+}
+.product-small.box>.box-image{
+	background: #D9D9D9;
+	border-radius: 22px;
+}
+
+.flickity-prev-next-button {bottom: unset;top:7%;opacity: 1;transform: unset !important;}
+.flickity-prev-next-button.next {
+    background: url(/wp-content/themes/atcgroup-child/img/icon-right.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    right: 0.5%;
+}
+.flickity-prev-next-button.previous {
+    background: url(/wp-content/themes/atcgroup-child/img/icon-left.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    right: 4%;
+    left: unset;
+}
+.flickity-prev-next-button>svg {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 850px) {
+	.quantity-five-col .col.large-3{
+		flex-basis: 20%;
+		max-width: 20%;
+	}
+	.quantity-five-col .five-starts .box-text{padding-bottom: 0;}
+	.quantity-five-col .five-starts h3{width: 40%;margin: 0 auto;}
+	.quantity-five-col .five-starts p{width: 85%;margin: 8px auto 0;}
+}
+
+@media screen and (max-width: 1540px) {
+	.sevices{
+		min-height: 928px !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 48em) {
+/*************** ADD MOBILE ONLY CSS HERE  ***************/
+
+
+}

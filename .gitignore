@@ -1,0 +1,13 @@
+node_modules
+src/wp-content/uploads
+src/wp-content/plugins/*
+src/wp-content/themes/atcgroup-child/site-structure
+package-lock.json
+package.json
+.env
+docker-compose.yml
+Dockerfile
+gulpfile.js
+.htaccess
+# src/wp-content/plugins
+# npx tailwindcss -i ./tailwind.css -o ./style.css --watch
